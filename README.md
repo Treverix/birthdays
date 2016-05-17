@@ -1,2 +1,2 @@
 # birthdays
-A simple django based birthday webapp
+A simple django based birthday webapp.
