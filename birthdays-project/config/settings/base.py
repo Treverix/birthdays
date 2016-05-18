@@ -50,7 +50,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'birthdays.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
