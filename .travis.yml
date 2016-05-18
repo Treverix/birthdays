@@ -10,7 +10,7 @@ install: "pip install -r requirements.txt"
 
 # command to run tests
 script:
-  - pep8 birthdays/birthdays
-  - pylint birthdays/birthdays
-  - coverage run -m unittest
-  - coverage report --fail-under=100
+  - pep8 birthdays-project
+  - pylint birthdays-project/config
+#  - coverage run -m unittest
+#  - coverage report --fail-under=100

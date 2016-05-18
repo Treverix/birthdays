@@ -90,5 +90,6 @@ ENV/
 
 # Created by .ignore support plugin (hsz.mobi)
 
-todo.db
+birthdays.iml
+.idea/
 coverage_html_report/
