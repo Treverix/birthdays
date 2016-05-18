@@ -12,5 +12,5 @@ install: "pip install -r requirements.txt"
 script:
   - pep8 birthdays-project
   - pylint birthdays-project/config
-#  - coverage run -m unittest
-#  - coverage report --fail-under=100
+  - coverage run birthdays-project/manage.py test birthdays-project
+  - coverage report --fail-under=100

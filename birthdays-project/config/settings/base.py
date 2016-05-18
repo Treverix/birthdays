@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'birthday.apps.BirthdayConfig'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -74,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'birthdays.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
