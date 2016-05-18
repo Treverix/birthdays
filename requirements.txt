@@ -17,4 +17,5 @@ pylint==1.5.5
 simplegeneric==0.8.1
 six==1.10.0
 traitlets==4.2.1
+Unipath==1.1
 wrapt==1.10.8

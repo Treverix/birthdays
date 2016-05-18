@@ -90,6 +90,7 @@ ENV/
 
 # Created by .ignore support plugin (hsz.mobi)
 
+*.sqlite3
 birthdays.iml
 .idea/
 coverage_html_report/
