@@ -1,4 +1,4 @@
-from .base import *  # pylint: disable=W0614, W0401
+from .base import *  # pylint: disable=W0614, W0401, # NOQA
 
 # Enable debug
 DEBUG = True
@@ -8,5 +8,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'dev.sqlite3'),
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+
     }
 }

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h3>Members with birthdays.</h3>
+    <ul>
+        {% for e in user %}
+            <li>
+                <a href="{% url 'user_detail' e.id %}">
+                    {{ e.id }}
+                    {{ e.firstName|capfirst }} {{ e.lastName|capfirst}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

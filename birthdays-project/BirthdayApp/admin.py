@@ -9,6 +9,8 @@ from .models import User
 # Modifies the appearance of the textfields in the admin section.
 class ModAdmin(admin.ModelAdmin):
     formfield_overrides = {
+        # Changes the default appearance of the admin backend so the
+        # boxes are more reasonably sized.
         models.TextField: {'widget': TextInput(attrs={'size': '50'})},
         models.TextField: {'widget': Textarea(attrs={'rows': 4, 'cols': 40})},
     }
