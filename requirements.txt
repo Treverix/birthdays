@@ -12,6 +12,8 @@ lazy-object-proxy==1.2.2
 pep8==1.7.0
 pexpect==4.0.1
 pickleshare==0.7.2
+postgres==2.2.1
+psycopg2==2.6.1
 ptyprocess==0.5.1
 pylint==1.5.5
 simplegeneric==0.8.1
