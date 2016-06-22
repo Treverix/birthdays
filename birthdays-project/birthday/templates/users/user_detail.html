@@ -4,5 +4,5 @@
     <a href="{% url 'index' %}">Back to list</a>
     <h4>Name: {{ user.firstName }} {{ user.lastName}}</h4>
     <h4>User ID: {{ user.id }}</h4>
-    <h4>Birthday:</h4>
+    <h4>Birthday: {{ user.dob }}</h4>
 {% endblock %}
