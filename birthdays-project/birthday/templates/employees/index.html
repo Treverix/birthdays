@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h3>Employees</h3>
+    <ul>
+        {% for e in Employee %}
+            <li>
+                <a href="{% url 'employee_detail' e.id %}">
+                    {{ e.first_name|capfirst }} {{ e.last_name|capfirst}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
