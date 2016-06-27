@@ -25,7 +25,7 @@ STATICFILES_DIR = (
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&l_pmpr@t)%3vusas3tyes&gwtx6@gd)ms@6^&8!p&s82ny%o-'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '1')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'birthday.apps.BirthdayConfig',
     'birthday_app',
 ]
 
@@ -62,7 +61,6 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # 'DIRS': [BASE_DIR.child('termplates')],
         'DIRS': [BASE_DIR.child('templates')],
         'APP_DIRS': True,
         'OPTIONS': {
