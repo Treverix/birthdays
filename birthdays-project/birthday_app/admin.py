@@ -1,8 +1,7 @@
 from django.contrib import admin
 
-from .models import Employee, Birthdate
+from birthday_app.models import Employee
 
 
 # Registers the Models so the admin can make changes.
 admin.site.register(Employee)
-admin.site.register(Birthdate)

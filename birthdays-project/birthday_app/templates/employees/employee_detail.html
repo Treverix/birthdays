@@ -4,5 +4,5 @@
     <a href="{% url 'index' %}">Return to main list</a>
     <h4>Name: {{ Employee.first_name|capfirst}}
               {{Employee.last_name|capfirst}}</h4>
-    <h4>Birthday: {{ Employee.date_of_birth }}</h4>
+    <h4>Birthday: {{ Employee.date_of_birth|date:'d M Y' }}</h4>
 {% endblock %}
