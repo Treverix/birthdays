@@ -9,7 +9,7 @@ pip install -r requirements.txt
 
 echo "[INFO] Running lint (for configuration: see setup.cfg)"
 echo "[INFO] ... Running pep8 (for configuration: see setup.cfg)"
-for init_file in `find . -name '__init__.py'`
+for init_file in `find birthdays-project -name '__init__.py'`
 do
     module=`dirname $init_file`
     echo "[INFO] ... ... pep8 $module"
@@ -17,7 +17,7 @@ do
 done
 
 echo "[INFO] ... Running pylint (for configuration: see .pylintrc)"
-for init_file in `find . -name '__init__.py'`
+for init_file in `find birthdays-project -name '__init__.py'`
 do
     module=`dirname $init_file`
     echo "[INFO] ... ... pylint $module"
@@ -25,7 +25,7 @@ do
 done
 
 echo "[INFO] Running tests and measuring code coverage"
-coverage run -m unittest
+coverage run birthdays-project/manage.py test birthdays-project
 coverage report | grep -v 100%
 coverage html
 count=`grep pc_cov coverage_html_report/index.html | grep -c "100%" || true`

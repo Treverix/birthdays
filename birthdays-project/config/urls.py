@@ -16,6 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from birthday_app import views
+
 urlpatterns = [
+    url(r'^$', views.index, name='index'),
+    url(r'^employees/(?P<id>\d+)', views.employee_detail,
+        name='employee_detail'),
     url(r'^admin/', admin.site.urls),
+
 ]
